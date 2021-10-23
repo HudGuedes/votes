@@ -20,7 +20,7 @@
 				<td><%= user.team %></td>
 				<td><%= user.votes %></td>
 				<td>
-					<%= link_to 'Votar', vote_count_vote_path(user.id) %>
+					<%= link_to 'Votar', vote_count_vote_path(user.id), class: "btn btn-light" %>
 				</td>
 			</tr>
 		<% end %>
