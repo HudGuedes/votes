@@ -1,0 +1,24 @@
+<div class="container">
+	<table class="table">
+		<tr>
+			<th>ID</th>
+			<th>Nome</th>
+			<th>Profissão</th>
+			<th>Time</th>
+			<th>Qtd. Votos</th>
+			<th>#</th>
+		</tr>
+		<% @users.each do |user| %>
+			<tr>
+				<td><%= user.id %></td>
+				<td><%= user.name %></td>
+				<td><%= user.occupation == true ? 'Piloto' : 'Mecanico' %></td>
+				<td><%= user.team %></td>
+				<td><%= user.votes %></td>
+				<td>
+					<%= link_to 'Votar', vote_count_vote_path(user.id) %>
+				</td>
+			</tr>
+		<% end %>
+	</table>
+</div>

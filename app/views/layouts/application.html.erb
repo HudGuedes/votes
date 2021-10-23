@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <% if current_user %>
+    <%= link_to('Sair', destroy_user_session_path, method: :delete, class: 'btn btn-light float-end') %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
