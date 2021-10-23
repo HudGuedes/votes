@@ -1,24 +1,28 @@
-# README
+<h1 class="text-center">Votes</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+O intuito desse projeto e criar uma aplicação de votação, onde é possível realizar seu cadastro informando se é piloto ou mecânico e podendo votar nos outros candidatos cadastrados.
 
-Things you may want to cover:
+<h1>Tecnologias utilizadas;</h1>
 
-* Ruby version
+- ruby 2.6.3
+- rails 6.0.4
 
-* System dependencies
+<h1>Modo de utilizar;</h1>
 
-* Configuration
+Clone o repositório para a sua máquina, copie e cole: git clone https://github.com/HudGuedes/votes Após isso, entre na pasta onde você clonou o projeto e digite os comandos:
 
-* Database creation
+- yarn install
+- bundle install
+- rails db:create
+- rails db:migrate
+- rails s
 
-* Database initialization
+Acesse: http://localhost:3000/
 
-* How to run the test suite
+Assim, você poderá criar um novo cadastro, informando os campos pedidos. Após o cadastro você poderá efetuar a votação nos candidatos já cadastrados.
 
-* Services (job queues, cache servers, search engines, etc.)
+Enfim, esse é o projeto e sua forma de uso.
 
-* Deployment instructions
+Qualquer dúvida estou à disposição.
 
-* ...
+Muito obrigado e espero que tenham gostado!
