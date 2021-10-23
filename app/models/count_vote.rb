@@ -1,0 +1,2 @@
+class CountVote < ApplicationRecord
+end
